@@ -1,0 +1,99 @@
+<!Doctype html>
+<html>
+	<head> </head>
+	<style>
+		header{
+			max-width: 2000px;
+			box-shadow: 0-0-10px;
+			background-color: green;
+			text-align: left;
+			}
+		main{
+			text-align: center;
+			background-color: orange;
+			}
+	</style>
+	<body>
+<header>
+	<h1 style= "width: 50%; color: "black";> ROCHIER BOOKING SERVICE </h1>
+</header>
+
+	<main>
+	
+			<br>
+			<label for="name"> Name </label>
+			<input type="text" id="name" name="name">
+			<br>
+			<br>
+			<label for="name"> Email </label>
+			<input type="text" id="email" name="email">
+			<br>
+			<br>
+			<label for="phone"> Phone </label>
+			<input type="tel" id="phone" name="phone">
+			<br>
+			<br>
+			<label for="street"> Street </label>
+			<input type="text" id="street" name="street">
+			<br>
+			<br>	
+			<label for="street-number"> Number </label>
+			<input type="number" id="street-number" name="street-number">
+			<br>
+			<br>			
+			<label for="city"> City </label>
+			<input type="text" id="city" name="city">
+			<br>
+			<br>
+			<label for="post-code"> Post Code </label>	
+			<input type="text" id="post-code" name="post-code">
+						
+					
+		
+		<h2 style=color: "black";>Details</h2>
+			
+			<label for="arrive"><i class="fafa-calendar"></i> Arrive </label>
+			<input type="date" id="arrive" name="arrive" value=<?php echo date('Y-m-d'); ?>
+			<br>
+			<br>
+			<label for="depart"><i class="fafa-calendar"></i> Depart </label>
+			<input type="date" id="depart" name="depart" value="<?php echo date('Y-m-d'); ?>" />
+			<br>
+			<br>	
+			<label for="Number of Person">Number of Person:</label>
+			<input type="number" id="Number" name="Persons">
+			<br>
+			<br>
+				
+				<label for="Room"> Room </label>	
+				<select>	
+					<option value="blank"></option>
+					<option value="deluxe" selected>With Pool View</option>
+					<option value="Normal De Lux">Normal De Luxe</option>
+				
+				</select>
+			<br>
+			<br>
+				
+				<label for="Room"> Room </label>
+				<select>
+				<option value="blank"></option>
+				<option value="single-bed">Single-bed</option>
+				<option value="double-bed">Double-bed</option>
+				</select>
+				
+
+				<p class="info-text">Please describe your needs e.g. Extra bed, Extra towels, soap etc.</p>
+					
+					<label for="comments">Comments</label>
+					<br>
+					<textarea name="comments" id="comments"></textarea>
+					<br>
+					<br>
+					<button>Submit</button>
+	
+</form>
+</html>
+
+						
+			
